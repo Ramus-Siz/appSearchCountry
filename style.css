@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@300;400&family=Ubuntu&family=Work+Sans:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: rgba(5, 152, 214, 0.826);
+
+}
+header{
+    background-color: white;
+    max-width: 100vw;
+    margin: auto;
+    padding: 2em 2.5em;
+}
+
+header h2{
+    color: rgb(231, 9, 9) ;
+}
+
+.container{
+    background-color: white;
+    width: 80vw;
+    max-width: 38em;
+    padding: 3em 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 0.6em;
+
+}
+
+.input-seach{
+    display: flex;
+    gap: 1.25em;
+    
+}
+.contry{
+    padding: 0 0.5em;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid rgb(231, 9, 9) ;
+    
+}
+
+.input-seach button{
+    background-color: rgb(231, 9, 9);
+    color: white;
+    padding: 0.5em 1em;
+   border-radius: 1.5em;
+   border: none;
+
+}
+
+.result{
+    margin-top: 2em;
+    
+}
+
+.block-flag{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.bloc-data{
+    margin-top: 1em;
+}
+
+.bloc-data h3{
+    font-size: 0.8em;
+}
+
+.bloc-data span{
+    color: rgb(210, 11, 11);
+}
+
+
+
+.img-flag{
+    width: 6em;
+    max-width: 12em;
+}

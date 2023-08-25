@@ -12,6 +12,9 @@ body{
 
 }
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     max-width: 100vw;
     margin: auto;
@@ -19,6 +22,11 @@ header{
 }
 
 header h2{
+    color: rgb(231, 9, 9) ;
+}
+
+.user{
+    font-size: 1.5em;
     color: rgb(231, 9, 9) ;
 }
 

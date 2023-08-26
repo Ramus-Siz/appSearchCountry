@@ -102,7 +102,12 @@ header h2{
     }
 
     .block-flag{
-        flex-direction: column;
+        display: block;
+    }
+
+    .img-flag{
+        width: 10em;
+        max-width: 12em;
     }
 
 }

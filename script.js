@@ -24,6 +24,7 @@ function fetchFunction(urlSearch) {
                 console.log(data[0].population);
 
                 resultat.innerHTML= `
+
                 <div class="block-flag">
                 <img src= ${data[0].flags.svg} class="img-flag" alt="flag" /> 
                 <h3> ${data[0].name.common}</h3>
@@ -37,12 +38,7 @@ function fetchFunction(urlSearch) {
                 <h3>Area: <span>${data[0].area}</span></h3>
                 <h3>IDD: <span>${data[0].idd.root}${data[0].idd.suffixes[0]}</span></h3>
 
-
-               
-
                 </div>
-
-
 
                 `
                 

@@ -26,7 +26,7 @@ function fetchFunction(urlSearch) {
                 resultat.innerHTML= `
                 <div class="block-flag">
                 <img src= ${data[0].flags.svg} class="img-flag" alt="flag" /> 
-                <h2>${data[0].name.common}</h2>
+                <h3>${data[0].name.common}</h3>
                 </div>
                 <div class="bloc-data">
                 <h3>Capital: <span>${data[0].capital[0]}</span></h3>

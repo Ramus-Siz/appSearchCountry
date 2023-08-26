@@ -101,4 +101,8 @@ header h2{
         flex-direction: column;
     }
 
+    .block-flag{
+        flex-direction: column;
+    }
+
 }

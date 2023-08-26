@@ -4,7 +4,7 @@ let resultat =document.getElementById("resultat");
 
 function getUrl(e) {
     let countryName=inputContry.value;
-    let urlSearch= `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+    let urlSearch= `https://restcountries.com/v3.1/name/${countryName}`;
     console.log(urlSearch);
     fetchFunction(urlSearch);
     e.preventDefault();

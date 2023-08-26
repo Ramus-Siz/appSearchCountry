@@ -26,7 +26,7 @@ header h2{
 }
 
 .user{
-    font-size: 1.5em;
+    font-size: 2em;
     color: rgb(231, 9, 9) ;
 }
 
@@ -93,4 +93,12 @@ header h2{
 .img-flag{
     width: 6em;
     max-width: 12em;
+}
+
+
+@media screen and (max-width: 450px){
+    .input-seach{
+        flex-direction: column;
+    }
+
 }

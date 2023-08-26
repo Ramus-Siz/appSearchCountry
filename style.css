@@ -103,6 +103,7 @@ header h2{
 
     .block-flag{
         display: block;
+        gap: 0.2em;
     }
 
     .img-flag{

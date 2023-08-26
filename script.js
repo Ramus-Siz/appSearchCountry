@@ -4,7 +4,7 @@ let resultat =document.getElementById("resultat");
 
 function getUrl(e) {
     let countryName=inputContry.value;
-    let urlSearch= `https://restcountries.com/v3.1/name/${countryName}`;
+    let urlSearch= `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     console.log(urlSearch);
     fetchFunction(urlSearch);
     e.preventDefault();
@@ -26,7 +26,7 @@ function fetchFunction(urlSearch) {
                 resultat.innerHTML= `
                 <div class="block-flag">
                 <img src= ${data[0].flags.svg} class="img-flag" alt="flag" /> 
-                <h3>${data[0].name.common}</h3>
+                <h3> ${data[0].translations.fra.common}</h3>
                 </div>
                 <div class="bloc-data">
                 <h3>Capital: <span>${data[0].capital[0]}</span></h3>
@@ -50,6 +50,12 @@ function fetchFunction(urlSearch) {
 
 
             })
+        }else{
+                alert(`
+                ${inputContry.value} is not a contry name. Search by country’s full name. It can be the common or official name`);
+
+        
+            
         }
     })
     

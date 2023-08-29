@@ -33,7 +33,7 @@ h2 {
   margin-top: 3em;
 }
 
-h3 {
+header h3 {
   color: rgba(255, 255, 255, 0.268);
 }
 
@@ -75,6 +75,7 @@ main {
   outline: none;
   border-radius: 2em;
   width: 60em;
+
   background: rgba(255, 255, 255, 0.889);
 }
 
@@ -147,9 +148,6 @@ main {
 
 footer {
   background-color: #0080ff;
-
-  width: 100vw;
-  bottom: 0;
 }
 
 .log {
@@ -164,6 +162,22 @@ footer {
 @media screen and (max-width: 450px) {
   h2 {
     font-size: 1em;
+  }
+
+  .input-seach {
+  }
+
+  .input-seach button {
+    margin-left: -6em;
+  }
+
+  .search {
+    color: #0080ff;
+  }
+
+  .contry {
+    width: 20em;
+    padding: 1.5em 1em;
   }
 
   .img-flag {
@@ -183,7 +197,6 @@ footer {
   .items {
     width: auto;
     padding: 2em 2em;
-
     margin-bottom: 1.5em;
   }
 }

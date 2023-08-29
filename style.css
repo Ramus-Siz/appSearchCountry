@@ -175,13 +175,9 @@ footer{
 
 
 @media screen and (max-width: 450px){
-    .input-seach{
-        flex-direction: column;
-    }
-
-    .block-flag{
-        display: block;
-        gap: 0.2em;
+    h2{
+        font-size: 1em;
+       
     }
 
     .img-flag{
@@ -190,8 +186,18 @@ footer{
         
     }
 
-.container{
-    top: 57%;
-}
+    .result{
+        display: block;
+        padding:1em 1em;
+      
+      
+    }
 
+   .container, main{
+    padding:0 0;
+   }
+ .items{
+    width: auto;
+    margin-bottom: 1.5em;
+ }
 }

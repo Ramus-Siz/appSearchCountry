@@ -161,7 +161,7 @@ main{
 footer{
    
     background-color: #0080ff;
-    position: absolute;
+    position: relative;
     width: 100vw;
     bottom: 0;
     

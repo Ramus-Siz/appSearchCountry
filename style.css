@@ -129,7 +129,7 @@ main{
     justify-content: center;
     align-items: center;
     color: rgba(255, 255, 255, 0.889);
-    gap: 2em;
+    gap: 1em;
 }
 
 .bloc-data{
@@ -160,7 +160,7 @@ main{
 
 footer{
     bottom: 0;
-    background-color: rgb(9, 9, 9);
+    background-color: #0080ff;
     
 }
 
@@ -198,6 +198,8 @@ footer{
    }
  .items{
     width: auto;
+    padding:2em 2em;
+
     margin-bottom: 1.5em;
  }
 }

@@ -4,7 +4,7 @@ let resultat =document.getElementById("resultat");
 
 function getUrl(e) {
     let countryName=inputContry.value;
-    let urlSearch= `https://restcountries.com/v3.1/name/${countryName}`;
+    let urlSearch= `https://restcountries.com/v3.1/translation/${countryName}`;
     console.log(urlSearch);
     fetchFunction(urlSearch);
     e.preventDefault();
@@ -18,32 +18,39 @@ function fetchFunction(urlSearch) {
 
             reponse.json().then(data =>{
                 console.log(data);
-                console.log(Object.keys(data[0].currencies));
-                console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
-                console.log(data[0].flags.svg);
-                console.log(data[0].population);
 
-                resultat.innerHTML= `
+             let html="";
 
-                <div class="block-flag">
-                <img src= ${data[0].flags.svg} class="img-flag" alt="flag" /> 
-                <h3> ${data[0].name.common}</h3>
-                </div>
-                <div class="bloc-data">
-                <h3>Capital: <span>${data[0].capital[0]}</span></h3>
-                <h3>Continents: <span>${data[0].continents[0]}</span></h3>
-                <h3>Languages <span>${Object.values(data[0].languages).toString().split(",").join(", ")}</span></h3>
-                <h3>Currencies: <span>${Object.keys(data[0].currencies)} ( ${data[0].currencies[Object.keys(data[0].currencies)].name} )</span></h3>
-                <h3>Population: <span>${data[0].population}</span></h3>
-                <h3>Area: <span>${data[0].area}</span></h3>
-                <h3>IDD: <span>${data[0].idd.root}${data[0].idd.suffixes[0]}</span></h3>
+                // console.log(Object.keys(data[0].currencies));
+                // console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
+                // console.log(data[0].flags.svg);
+                // console.log(data[0].population);
 
-                </div>
+               for (let index = 0; index < data.length; index++) {
+               html+=`
+               <div class="items">
+               <div class="block-flag">
+               <img src= ${data[index].flags.svg} class="img-flag" alt="flag" /> 
+               <h3> ${data[index].translations.fra.common}</h3>
 
-                `
+               </div>
+               <div class="bloc-data">
+               <h3>Capital : <span>${data[index].capital[0]}</span></h3>
+               <h3>Continents : <span>${data[index].continents[0]}</span></h3>
+               <h3>Languages : <span>${Object.values(data[index].languages).toString().split(",").join(", ")}</span></h3>
+               <h3>Currency : <span>${Object.keys(data[index].currencies)} ( ${data[index].currencies[Object.keys(data[index].currencies)].name} )</span></h3>
+               <h3>Population : <span>${data[index].population}</span></h3>
+               <h3>Area : <span>${data[index].area}</span></h3>
+               <h3>IDD Tel : <span>${data[index].idd.root}${data[index].idd.suffixes[0]}</span></h3>
+
+               </div>
+               </div>
+               
+               `;
                 
+               }
 
-
+                resultat.innerHTML= html;
 
             })
         }else{

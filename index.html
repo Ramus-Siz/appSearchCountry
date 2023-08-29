@@ -9,23 +9,40 @@
     
 </head>
 <body>
-    <header>
-        <h2>Search Country</h2>
+    <header class="center-respons">
+        <img src="images/logo-grafiki.png "  class="img-logo" alt="">
+        
         <ion-icon class="user" name="person-circle-outline"></ion-icon>
     </header>
-
-   <div class="container">
-    <div class="input-seach">
+    <main>
+        <div><h2>A WAY TO FOUND THE COUNTRY'S INFORMATIONS </h2></div>
+    <div class="bar-search">
+        <div class="input-seach center-respons">
         <input 
         type="text"
         class="contry" 
         placeholder="Enter a Country name" 
         id="inputContry">
-        <button type="submit" id="seach-button">Search</button>
+            <button type="submit" id="seach-button">
+            <ion-icon class='search' name="search-outline"></ion-icon>
+            </button>
     </div>
+
+    </div>
+
+   <div class="container">
+    
     <div id="resultat" class="result"></div>
 
    </div>
+   <footer>
+    <div class="log">
+        <img class='img-logo' src="images/Symboleblanc.png" alt="">
+    </div>
+   </footer>
+    </main>
+    
+   
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

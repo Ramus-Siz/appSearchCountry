@@ -159,8 +159,11 @@ main{
 }
 
 footer{
-    bottom: 0;
+   
     background-color: #0080ff;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
     
 }
 
